@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Practice</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="text-light my-4">Reading Practice</h1>
+        <div class="btn-group mb-4" role="group" aria-label="Language selection">
+            <button id="chinese-btn" class="btn btn-secondary">Chinese</button>
+            <button id="english-btn" class="btn btn-secondary">English</button>
+        </div>
+        <div id="file-list" class="d-flex flex-wrap justify-content-center mb-4"></div>
+        <div id="reader" style="display: none;">
+            <p id="selected-file" class="text-light mb-4"></p>
+            <button id="start-btn" class="btn btn-primary mb-4">Start</button>
+            <div class="d-flex justify-content-center">
+                <button id="display-btn" class="btn btn-info mb-3">Display</button>
+                <button id="repeat-btn" class="btn btn-warning mb-3 ml-2">Repeat</button>
+                <button id="back-btn" class="btn btn-secondary mb-3 ml-2">Back</button>
+                <button id="next-btn" class="btn btn-secondary mb-3 ml-2">Next</button>
+            </div>
+            <p id="current-line" class="text-light mb-3" style="display: none;"></p>
+            <div id="progress" class="progress mb-3" style="height: 30px;">
+                <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p id="spacebar-message" class="text-light">Press space bar to continue</p>
+            <p id="message" class="text-light"></p>
+            <div id="loading-spinner" class="spinner-border text-light" role="status" style="display: none;">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

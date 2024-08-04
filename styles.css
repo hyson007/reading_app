@@ -1,0 +1,34 @@
+body {
+    background-color: #1c1c1c;
+    color: #f1f1f1;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    font-size: 1.2rem;
+}
+
+#current-line {
+    font-size: 1.5rem;
+}
+
+#message {
+    font-size: 1.2rem;
+}
+
+.btn {
+    font-size: 1rem;
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+
+#spacebar-message {
+    font-size: 1rem;
+    margin-top: -15px;
+}
