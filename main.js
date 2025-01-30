@@ -23,7 +23,9 @@ let currentLineIndex = 0;
 
 const textFiles = {
     chinese: Array.from({ length: 17 }, (_, i) => `p3-listen${i + 1}.txt`),
-    english: Array.from({ length: 9 }, (_, i) => `e3-listen${i + 1}.txt`)
+    english: ['e3', 'e4', 'e5', 'e6'].flatMap(prefix => 
+        Array.from({ length: 9 }, (_, i) => `${prefix}-listen${i + 1}.txt`)
+    )
 };
 
 chineseBtn.onclick = () => {
